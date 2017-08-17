@@ -8,11 +8,11 @@
   <tbody>
        <tr style="background-color:#fff;">
         <td width="12%"></td>
-        <td width="15%"><img :src="products_1"/><br>套餐一</td>
-        <td width="15%"><img :src="products_2"/><br>套餐二</td>
-        <td width="15%"><img :src="products_3"/><br>套餐三</td>
-        <td width="15%"><img :src="products_4"/><br>套餐四</td>
-        <td width="15%"><img :src="products_5"/><br>套餐五</td>
+        <td width="15%"><img :src="products_1" width="40%" height="40%"><br>套餐一</td>
+        <td width="15%"><img :src="products_2" width="40%" height="40%"><br>套餐二</td>
+        <td width="15%"><img :src="products_3" width="40%" height="40%"><br>套餐三</td>
+        <td width="15%"><img :src="products_4" width="40%" height="40%"><br>套餐四</td>
+        <td width="15%"><img :src="products_5" width="40%" height="40%"><br>套餐五</td>
       </tr>
  <tr>
      
@@ -107,9 +107,9 @@
         <td rowspan="2"></td>
         <td><el-select placeholder="购买月份数量"></el-select></td>
         <td><el-select placeholder="购买月份数量"></el-select></td>
-                <td><el-select placeholder="购买月份数量"></el-select></td>
-                <td><el-select placeholder="购买月份数量"></el-select></td>
-                <td><el-select placeholder="购买月份数量"></el-select></td>
+        <td><el-select placeholder="购买月份数量"></el-select></td>
+        <td><el-select placeholder="购买月份数量"></el-select></td>
+        <td><el-select placeholder="购买月份数量"></el-select></td>
       </tr>
       <tr>
         <td><el-button @click.native="order_btn" type="primary"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>购买套餐</el-button></td>
@@ -165,11 +165,11 @@ import {mapGetters,mapActions} from 'vuex'
 		        ],
 		        num:0,
 				groups: [],
-				products_1:require('../../assets/images/cp.png'),
-                products_2:require('../../assets/images/cp_2.png'),
-                products_3:require('../../assets/images/cp_3.png'),
-                products_4:require('../../assets/images/cp_4.png'),
-                products_5:require('../../assets/images/cp_5.png'),
+				products_1:require('../../assets/images/cp.svg'),
+                products_2:require('../../assets/images/cp_2.svg'),
+                products_3:require('../../assets/images/cp_3.svg'),
+                products_4:require('../../assets/images/cp_4.svg'),
+                products_5:require('../../assets/images/cp_5.svg'),
 				id:localStorage.getItem('currentUser_id'),
 				otoken:localStorage.getItem('currentUser_token')
 			}

@@ -1,124 +1,93 @@
 <template>
 	<div class="commodity">
-		<div class="title"><strong>{{$route.name}} Products</strong></div>
+		<div class="title"><strong>{{$route.name}} Details</strong></div>
 		<div class="comm_list">
 		<div class="table-responsive">
         <table class="table table-bordered table table-striped ">
 
   <tbody>
        <tr style="background-color:#fff;">
-        <td width="12%"></td>
-        <td width="15%"><img :src="products"/><br>套餐一</td>
-        <td width="15%"><img :src="products"/><br>套餐二</td>
-        <td width="15%"><img :src="products"/><br>套餐三</td>
-        <td width="15%"><img :src="products"/><br>套餐四</td>
-        <td width="15%"><img :src="products"/><br>套餐五</td>
+        <td width="30%">付款二维码<br><br>
+           付款时，请在附言栏中输入此绿色随机码：<br>
+            <span class="t2">6f2b82</span></td>
+        <td width="20%"><img :src="qr_code"/></td>
+
       </tr>
  <tr>
      
-        <td style="letter-spacing:10px;">价格</td>
-        <td class="t1">¥8,000</td>
-        <td class="t1">¥15,000</td>
-        <td class="t1">¥25,000</td>
-        <td class="t1">¥30,000</td>
-        <td class="t1">¥55,000</td>
-      </tr>
-      <tr style="letter-spacing:10px;">
-        <td>时间</td>
-        <td>每月</td>
-        <td>每月</td>
-        <td>每月</td>
-        <td>每月</td>
-        <td>每月</td>
+        <td>总金额</td>
+        <td class="t2">¥24,000</td>
+
       </tr>
       <tr>
-        <td>DDoS防火墙</td>
-        <td class="t2">100G</td>
-        <td class="t2">150G</td>
-        <td class="t2">150G</td>
-        <td class="t2">200G</td>
-        <td class="t2" style="letter-spacing:10px;">无限</td>
+        <td>订单编号</td>
+        <td class="t1">87654321</td>
+
+      </tr>
+      <tr>
+        <td>下单时间</td>
+        <td>2017-06-20 16:47</td>
+
       </tr>
         <tr>
-        <td>CC云清洗</td>
-        <td class="t2">100M</td>
-        <td class="t2">150M</td>
-        <td class="t2">150M</td>
-        <td class="t2">200M</td>
-        <td class="t2" style="letter-spacing:10px;">无限</td>
+        <td>商品名称</td>
+        <td>套餐一</td>
+
       </tr>
       <tr>
-        <td>域名数量</td>
-        <td class="t2">10个</td>
-        <td class="t2">50个</td>
-        <td class="t2">100个</td>
-        <td class="t2">150个</td>
-        <td class="t2" style="letter-spacing:10px;">无限</td>
+        <td>购买月份数量</td>
+        <td>3个月</td>
+
       </tr>
             <tr>
-        <td>泛解析</td>
-        <td><i class="fa fa-times" aria-hidden="true"></i></td>
-        <td><i class="fa fa-times" aria-hidden="true"></i></td>
-        <td class="t2" style="letter-spacing:10px;">支持</td>
-        <td class="t2" style="letter-spacing:10px;">支持</td>
-        <td class="t2" style="letter-spacing:10px;">支持</td>
+        <td>DDoS防火墙</td>
+        <td>50G</td>
+
       </tr>
       <tr>
+        <td>CC云清洗</td>
+        <td>50M</td>
+
+      </tr>
+            <tr>
+        <td>域名数量</td>
+        <td>10个</td>
+
+      </tr>
+      <tr>
+        <td>泛解析</td>
+          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+
+      </tr>
+            <tr>
         <td>访问端口</td>
         <td>80端口</td>
-        <td>支持非80</td>
-        <td>支持非80</td>
-        <td>支持非80</td>
-        <td>支持非80</td>
+
       </tr>
-            <tr>
+      <tr>
         <td>SSL支持</td>
         <td><i class="fa fa-times" aria-hidden="true"></i></td>
-        <td class="t2" style="letter-spacing:10px;">支持</td>
-        <td class="t2" style="letter-spacing:10px;">支持</td>
-        <td class="t2" style="letter-spacing:10px;">支持</td>
-        <td class="t2" style="letter-spacing:10px;">支持</td>
       </tr>
+      <tr>
+        <td>隐藏源ip</td>
+        <td style="letter-spacing:10px;">支持</td>
+
+      </tr>
+      
       <tr>
         <td>大陆地区加速</td>
         <td style="letter-spacing:10px;">支持</td>
-        <td style="letter-spacing:10px;">支持</td>
-        <td style="letter-spacing:10px;">支持</td>
-        <td style="letter-spacing:10px;">支持</td>
-        <td style="letter-spacing:10px;">支持</td>
-      </tr>
-            <tr>
-        <td>隐藏源ip</td>
-        <td style="letter-spacing:10px;">支持</td>
-        <td style="letter-spacing:10px;">支持</td>
-        <td style="letter-spacing:10px;">支持</td>
-        <td style="letter-spacing:10px;">支持</td>
-        <td style="letter-spacing:10px;">支持</td>
+
       </tr>
       <tr>
         <td>共享翻墙服务</td>
         <td><i class="fa fa-times" aria-hidden="true"></i></td>
-        <td><i class="fa fa-times" aria-hidden="true"></i></td>
-        <td><i class="fa fa-times" aria-hidden="true"></i></td>
-        <td><i class="fa fa-times" aria-hidden="true">订制后开通</i></td>
-        <td style="letter-spacing:10px;">支持</td>
-      </tr>
-            <tr style="background-color:#fff;">
-        <td rowspan="2"></td>
-        <td><el-select placeholder="购买月份数量"></el-select></td>
-        <td><el-select placeholder="购买月份数量"></el-select></td>
-                <td><el-select placeholder="购买月份数量"></el-select></td>
-                <td><el-select placeholder="购买月份数量"></el-select></td>
-                <td><el-select placeholder="购买月份数量"></el-select></td>
-      </tr>
-      <tr>
-        <td><el-button @click.native="order_btn" type="primary"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>购买套餐</el-button></td>
-        <td><el-button @click.native="order_btn" type="primary"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>购买套餐</el-button></td>
-        <td><el-button @click.native="order_btn" type="primary"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>购买套餐</el-button></td>
-        <td><el-button @click.native="order_btn" type="primary"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>购买套餐</el-button></td>
-        <td><el-button @click.native="order_btn" type="primary"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>购买套餐</el-button></td>
-      </tr>
 
+      </tr>
+      <tr class="t3" >
+        <td colspan="2">提醒事项：无</td>
+
+      </tr>
                     </tbody>
 </table>
                 
@@ -139,33 +108,11 @@
 import store from '../../vuex/'
 import {mapGetters,mapActions} from 'vuex'
 	export default {
-		computed:{
-			...mapGetters([
-       			'loadingShow',
-    		]),
-		},
 		data(){
 			return{
-				da:[{
-					id:'',
-					price:'',
-					prifix:'',
-					name:'',
-					expansions:[{
-
-					}],
-				}],
-				language:{
-					chinese:['站点数量','域名数量','DDos防火墙','cc云清洗','泛解析','访问端口','SSL支持','智能缓存','页面压缩','SEO专线','黑名单','定制'],
-					english:['Site number','Domain name number','DDoS firewall','CC cloud cleaning','Pan analytic','Access port','SSL support','Intelligent caching','Page compression','SEO line','Blacklist','Customized']
-				},
-				value2:'1',
-				 options: [
-				 
-		        ],
 		        num:0,
 				groups: [],
-				products:require('../../assets/images/cp.png'),
+				qr_code:require('../../assets/images/qr_code.png'),
 				id:localStorage.getItem('currentUser_id'),
 				otoken:localStorage.getItem('currentUser_token')
 			}
@@ -204,5 +151,5 @@ import {mapGetters,mapActions} from 'vuex'
 
 <style scoped lang="scss">
 	@import '~scss_vars';
-	@import '../../styles/commodity.scss';
+	@import '../../styles/details.scss';
 </style>
